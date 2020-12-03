@@ -63,6 +63,7 @@ header {
 .contenido-header h1 {
     color: white;
     font-size: 3rem;
+    text-align: center;
 }
 
 .menu {
@@ -112,6 +113,13 @@ header {
     .navegacion a:last-of-type {
         margin: 0;
     }
+}
+
+.siguenos {
+    padding-top: 1rem;
+    color: white;
+    text-align: center;
+    background: #00c1aa;
 }
 
 .miembros-equipo {
