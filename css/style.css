@@ -1,0 +1,163 @@
+html {
+    font-size: 62.5%;
+    /*reset para rems*/
+}
+
+
+/*Estilos globales*/
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto 0;
+}
+
+.texto-centrado {
+    text-align: center;
+}
+
+
+/*Utilidades*/
+
+.seccion {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+/*Header*/
+
+header {
+    background-color: red;
+}
+
+.site-header.inicio {
+    /*
+    background-image: url(../img/logo.png);
+    background-position: center center;
+    background-size: cover;
+    */
+    background: #00c1ff;
+    height: 100vp;
+    /*tamaño de la pantalla*/
+    min-height: 200px;
+}
+
+.imagen-logo {
+    width: 12rem;
+    border: 2px solid white;
+}
+
+.contenido-header {
+    height: 100%;
+    /*Llena la altura del header principal*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contenido-header h1 {
+    color: white;
+    font-size: 3rem;
+}
+
+.menu {
+    display: flex;
+    /*Horizontal*/
+    align-items: center;
+    /*Vertical*/
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+@media (min-width: 65rem) {
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.navegacion a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-right: 2rem;
+}
+
+.contenedor h1 {
+    font-size: 3rem;
+    padding: 2rem;
+}
+
+.navegacion a:hover {
+    color: blue;
+}
+
+.navegacion a:last-of-type {
+    margin-right: 0;
+}
+
+@media (min-width: 65rem) {
+    .navegacion a {
+        display: inline-block;
+        font-size: 1.8rem;
+        /** = 18px **/
+        margin-right: 2rem;
+    }
+    .navegacion a:last-of-type {
+        margin: 0;
+    }
+}
+
+.miembros-equipo {
+    justify-content: space-between;
+}
+
+@media (min-width: 65rem) {
+    .miembros-equipo {
+        display: flex;
+    }
+}
+
+.persona-equipo {
+    flex-basis: calc(33.3% - 1rem);
+    text-align: center;
+    border-radius: 10%;
+}
+
+@media (min-width: 65rem) {
+    .persona-equipo {
+        flex-basis: calc(33.3% - 1rem);
+    }
+}
+
+.persona-equipo img {
+    max-width: 30rem;
+    padding-top: 3rem;
+}
+
+.persona-equipo h2 {
+    font-size: 3rem;
+}
+
+.persona-equipo p {
+    font-size: 2rem;
+    text-align: center;
+    padding: 3rem;
+    padding-top: 0;
+}
+
+footer {
+    background: #00c1ff;
+}
+
+.copyright {
+    color: white;
+    margin: 0;
+    font-size: 1.5rem;
+}
